@@ -1,7 +1,11 @@
+#####################################################################
+##                            PACKAGES AVAILABLE
+#####################################################################
+
+###archiso
 alsa-utils
 amd-ucode
 arch-install-scripts
-archinstall
 b43-fwcutter
 base
 bind-tools
@@ -11,7 +15,6 @@ btrfs-progs
 clonezilla
 cloud-init
 crda
-cryptsetup
 darkhttpd
 ddrescue
 dhclient
@@ -23,7 +26,7 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
-espeakup
+#espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -33,8 +36,6 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
-grub
 hdparm
 intel-ucode
 ipw2100-fw
@@ -43,15 +44,14 @@ irssi
 iw
 iwd
 jfsutils
+kinit
 kitty-terminfo
 less
-lftp
 libfido2
 libusb-compat
-#linux
+linux
 linux-atm
 linux-firmware
-livecd-sounds
 lsscsi
 lvm2
 lynx
@@ -76,6 +76,7 @@ nvme-cli
 openconnect
 openssh
 openvpn
+os-prober
 partclone
 parted
 partimage
@@ -83,13 +84,11 @@ pcsclite
 ppp
 pptpclient
 pv
-qemu-guest-agent
-refind
 reflector
+refind
 reiserfsprogs
 rp-pppoe
 rsync
-rxvt-unicode-terminfo
 screen
 sdparm
 sg3_utils
@@ -108,8 +107,6 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
-virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
@@ -117,52 +114,368 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
-zsh
 
+##ZSH Stuff
+exa
+zsh
+nerd-fonts-hack
+
+###archiso-extra
+dialog
+dnsutils
+grub
+haveged
+logrotate
+ntp
+wget
 
 # everything above comes from archiso releng folder
 #######################################################
-###                    ALCI                         ###
+###                    XERO                         ###
 #######################################################
 
-#######################################################
-###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
-###             VIA CALAMARES CONFIG                ###
-#######################################################
+###nVidia
+nvidia-dkms
+nvidia-utils
+nvidia-settings
 
-#alci-dwm
-#alci-dwm-nemesis
-alci-calamares
-#alci-calamares-dev
-#alci-calamares-config
-#alci-calamares-config-btrfs
-#alci-calamares-config-dev
-#alci-calamares-config-hardened
-#alci-calamares-config-lts
-#alci-calamares-config-pure
-alci-calamares-config-xanmod-edge
-#alci-calamares-config-zen
-xterm
+###Video
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-qxl
+xf86-video-vesa
+xf86-video-vmware
+mesa
+
+###Input
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+xf86-input-synaptics
+xf86-input-vmmouse
+xf86-input-void
+
+###Printer
+bluez-cups
+cups
+cups-filters
+cups-pdf
+ghostscript
+gsfonts
+gutenprint
+print-manager
+splix
+system-config-printer
+
+###Calamares
+xero-calamares
+calamares-config
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
 #######################################################
 
 sddm
+bash
 bash-completion
-grub
-os-prober
 dex
 libxinerama
 make
 xorg-xkill
-xterm
 xorg-xrdb
-mkinitcpio-openswap
+
+#######################################################
+###    PACKAGES THAT ARE BY TECHXERO ~ DARKXERO     ###
+#######################################################
+
+###LUKS encryption
+cryptsetup
+
+mkinitcpio-firmware
+brightnessctl
+rtl88x2bu-cilynx-dkms-git
+imwheel
+
+#######################################################
+###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
+#######################################################
+
+boost-libs
+ckbcomp
+gtk-update-icon-cache
+hwinfo
+kconfig
+ki18n
+kio
+kcoreaddons
+kiconthemes
+kpmcore
+polkit-qt5
+qt5-svg
+qt5-tools
+qt5-translations
+qt5-x11extras
+qt5-xmlpatterns
+solid
+wget
+xmlto
+yaml-cpp
 
 ##### you can also use nmtui from the terminal
 networkmanager
 network-manager-applet
+
+#########################################################################
+#                  SOFTWARE FROM ARCH LINUX REPOSITORIES
+#########################################################################
+
+###applications
+gmrun
+grub-customizer
+numlockx
+pamac-all
+pamac-tray-icon-plasma
+
+###conky
+jq
+lm_sensors
+
+###fonts
+adobe-source-sans-pro-fonts
+awesome-terminal-fonts
+nerd-fonts-fira-code
+noto-fonts-emoji
+nerd-fonts-hack
+nerd-fonts-meslo
+nerd-fonts-terminus
+otf-libertinus
+tex-gyre-fonts
+ttf-droid
+ttf-roboto
+
+###Theme Tools
+kvantum
+latte-dock
+neofetch
+
+### Rice Related
+kde-rice
+layan-kde-git
+kde-wallpapers
+layan-gtk-theme-git
+tela-circle-icon-theme-git
+
+###utilities
+appmenu-gtk-module
+arandr
+asciinema
+assimp
+boost
+cblas
+cifs-utils
+cmake
+cronie
+dconf-editor
+dmidecode
+dnsmasq
+duf
+edid-decode-git
+expac
+extra-cmake-modules
+file-roller
+fuse2
+fuse3
+fuseiso
+gcc
+gettext
+git
+gksu
+gnome-disk-utility
+graphviz
+grsync
+gtest
+gtk-doc
+gts
+hddtemp
+hw-probe
+intltool
+jsoncpp
+libmtp
+laptop-detect
+lhasa
+libinput
+lsb-release
+lzop
+meld
+meson
+mlocate
+netpbm
+ninja
+nmon
+nodejs
+node-gyp
+npm
+oniguruma
+p7zip
+perl-xml-parser
+pkgstats
+playerctl
+polkit
+dbus-python
+tree
+qt5-3d
+rhash
+s3fs-fuse
+semver
+snapd
+sshfs
+unace
+unrar
+unzip
+vala
+vi
+vnstat
+w3m
+webkit2gtk
+wmctrl
+xdo
+xdotool
+yakuake
+zenity
+zip
+
+## Thunar AiO (Required For Root)
+
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+
+## G-Streamer
+
+gstreamer
+gst-libav
+gst-plugins-base
+gst-plugins-bad
+gst-plugins-ugly
+
+## Pulse Audio
+
+#pulseaudio
+#pulseaudio-alsa
+#pulseaudio-bluetooth
+#pulseaudio-qt
+#pulsemixer
+#pavucontrol
+#python-pulsectl
+
+## Pipewire Audio
+
+#pipewire
+#pipewire-alsa
+#pipewire-jack
+#pipewire-media-session
+#pipewire-pulse
+#pipewire-zeroconf
+
+###bluetooth
+
+#blueberry
+#bluez
+#bluez-libs
+#bluez-utils
+
+###network
+
+avahi
+nss-mdns
+modemmanager
+mobile-broadband-provider-info
+net-tools
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+rate-mirrors-bin
+smbclient
+traceroute
+
+###file management
+
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+ldmtool
+mtpfs
+udiskie
+udisks2
+
+###tumbler
+
+tumbler
+ffmpegthumbnailer
+freetype2
+libgsf
+libopenraw
+poppler-glib
+poppler-qt5
+
+# Python & Libs
+
+python-cffi
+python-numpy
+python-docopt
+python-pyaudio
+python-anytree
+python-pyparted
+python-pygments
+python-websockets
+
+###########################################################################
+#                           XEROLINUX_SELECTION
+###########################################################################
+
+###applications
+
+falkon
+
+###cursors
+
+bibata-cursor-theme-bin
+breeze
+
+###tools
+
+grub-tools
+mkinitcpio-openswap
+
+
+###utilities
+
+alsi
+archey3
+appstream
+archiso
+downgrade
+htop
+hardcode-fixer-git
+inetutils
+inxi
+lolcat
+lshw
+paru-bin
+pikaur-aurnews
+synapse
+sysprof
+systemd-manager-git
+yad
 
 #######################################################
 ###                    EXTRAS                       ###
@@ -172,42 +485,18 @@ network-manager-applet
 
 xorg-server
 xorg-apps
-neofetch
+xorg-xinit
 
+##### driver for virtualmachines
 
-##### Drivers for graphical cards
-
-#driver for virtualbox - xf86-video-vmware is dependency
-#systemctl enable vboxservice
-#systemctl start vboxservice
-#to have fullscreen
-#virtualbox-guest-utils
-
-#xf86-video-intel
-#xf86-video-amdgpu
-#xf86-video-nouveau
-
-#nvidia
-#nvidia-settings
-#nvidia-utils
-
-
-
-##### lightdm display manager
-
-#lightdm
-#lightdm-gtk-greeter
+spice-vdagent
+open-vm-tools
+qemu-guest-agent
+virtualbox-guest-utils
 
 ##### sddm display manager
 
-#sddm
-#alci-sddm-plasma-archpaint
-
-##### gdm display manager
-
-#gdm
-
-
+sddm
 
 ##### want to have base-devel group
 
@@ -215,53 +504,132 @@ base-devel
 
 ##### want to have linux-headers
 
-#linux-headers
-
-
+linux-headers
 
 ##### want to have a desktop
 
-#test
-xfce4
-xfce4-goodies
-neofetch
+### Plasma group content Categorized
+### https://archlinux.org/groups/x86_64/plasma/
+
+### Essentials
+
+kwin
+milou
+breeze
+kcrash
+drkonqi
+kgamma5
+kscreen
+khotkeys
+sddm-kcm
+kmenuedit
+ksysguard
+bluedevil
+powerdevil
+libkscreen
+kinfocenter
+egl-wayland
+ksshaskpass
+kdecoration
+kglobalaccel
+libksysguard
+xorg-xwayland
+kde-dev-utils
+kscreenlocker
+xdg-user-dirs
+knotifications
+systemsettings
+kwayland-server
+kde-gtk-config
+packagekit-qt5
+qt5-websockets
+polkit-kde-agent
+kactivitymanagerd
+kwayland-integration
+xdg-desktop-portal-kde
+
+### Plasma Stuff
+
+plasma-nm
+plasma-vault
+plasma-desktop
+plasma-framework
+plasma-workspace
+plasma-integration
+plasma-thunderbolt
+plasma-systemmonitor
+plasma-browser-integration
+
+### Others
+
+go
+pacman-contrib
+systemd-kcm
+ocs-url
+
+### KDE Applications group content Categorized
+### https://archlinux.org/groups/x86_64/kde-applications/
+
+## Utilities
+
+ark
+kgpg
+kfind
+kcalc
+kwrite
+dolphin
+kdialog
+konsole
+kalendar
+kmousetool
+ksystemlog
+khelpcenter
+markdownpart
+kwalletmanager
+
+## Networking
+
+kdeconnect
+zeroconf-ioslave
+kdenetwork-filesharing
+signon-kwallet-extension
+
+## Graphics
+
+svgpart
+gwenview
+spectacle
+kcolorchooser
+kdeplasma-addons
+kwin-scripts-forceblur
+kdegraphics-thumbnailers
+plasma-wayland-session
+plasma-wayland-protocols
+
+## Multimedia
+
+mpc-qt
+xfmpc
+dms
+
+ffmpegthumbs
+
+## KDE-SDK
+
+lokalize
+dolphin-plugins
+kdesdk-thumbnailers
+
+## Complements
+
+xsettingsd
+systemdgenie
+gnome-keyring
+qt6-wayland
+keditbookmarks
+
 
 
 ##### want to add/use the ArcoLinux repos
 
-arcolinux-mirrorlist-git
-arcolinux-keyring
-
-#test
-#arcolinux-wallpapers-git
-
-##### want to add/use the Chaotic repo
-
-chaotic-mirrorlist
-chaotic-keyring
-
-#test
-#xcursor-sweet
-
-
-##### want to add/use your local repo packages
-##### create your packages and put them in the local repo
-
-#There is a copy of the local repo in your folder
-#Copy/paste it to your homefolder
-#Change the name erik to your own username
-#update the database
-
-#test
-#nemesis-wallpapers
-
-
-#### want have a btrfs format
-#### use alci-calamares-config-btrfs 
-
-#timeshift
-#grub-btrfs
-#timeshift-autosnap
-linux-xanmod-edge
-linux-xanmod-edge-headers
-git
+#arcolinux-keyring
